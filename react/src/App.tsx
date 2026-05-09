@@ -9,8 +9,10 @@ import MyClassComponent from './components/ReactComponents/MyClassComponent'
 import MyComponent from './components/ReactComponents/MyComponent'
 // @ts-expect-error JSX file
 import FunctionComponent from './components/ReactComponents/FunctionComponent'
-
-
+// @ts-expect-error JSX file
+import CountComponent from './components/ReactComponents/CountComponent'
+// @ts-expect-error JSX file
+import CountApp from './components/ReactComponents/CountApp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -133,6 +135,12 @@ function App() {
         </div>
         <div>
           <FunctionComponent name="Sahithi functional component" />
+        </div>
+        <div>
+          <CountComponent />
+        </div>
+         <div>
+          <CountApp />
         </div>
       </section>
     </>
